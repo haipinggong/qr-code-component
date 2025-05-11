@@ -12,7 +12,7 @@ function App() {
           <Typography variant="h5" component="h1" sx={styles.title}>
             Improve your front-end skills by building projects
           </Typography>
-          <Typography variant="body1" component="p" sx={styles.description}>
+          <Typography variant="body2" sx={styles.description}>
             Scan the QR code to visit Frontend Mentor and take your coding
             skills to the next level.
           </Typography>
