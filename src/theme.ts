@@ -15,6 +15,13 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: "Outfit, sans-serif",
+    h5: { lineHeight: 1.2 },
+    body2: {
+      color: "#68778D",
+      lineHeight: 1.4,
+      letterSpacing: "0.2px",
+      fontSize: "0.9375rem",
+    },
   },
 });
 export default theme;

@@ -17,7 +17,7 @@ export const styles: StyleProps = {
     width: "100%",
     borderRadius: theme.spacing(1.25),
   }),
-  text: {
+  textContainer: {
     display: "flex",
     flexDirection: "column",
     gap: 2,
@@ -26,12 +26,7 @@ export const styles: StyleProps = {
   },
   title: (theme: Theme) => ({
     fontWeight: theme.typography.fontWeightBold,
-    lineHeight: 1.2,
   }),
-  description: {
-    letterSpacing: 0.2,
-    lineHeight: 1.4,
-  },
 };
 
 export default styles;
