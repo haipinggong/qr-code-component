@@ -20,7 +20,7 @@ This is a QR code component.
 ### Links
 
 - Solution URL: [https://github.com/haipinggong/qr-code-component](https://github.com/haipinggong/qr-code-component)
-- Live Site URL: [https://qr-code-component-na70nlggt-haipinggongs-projects.vercel.app/](https://qr-code-component-na70nlggt-haipinggongs-projects.vercel.app/)
+- Live Site URL: [https://qr-code-component-five-lovat.vercel.app/](https://qr-code-component-five-lovat.vercel.app/)
 
 ### Built with
 
