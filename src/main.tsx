@@ -1,9 +1,10 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
-import "./index.css";
+// import "./index.css";
 import theme from "./theme";
-import { ThemeProvider } from "@mui/material";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import GlobalStyles from "@mui/material/GlobalStyles";
 import "@fontsource/outfit/300.css";
 import "@fontsource/outfit/400.css";
 import "@fontsource/outfit/500.css";
@@ -16,6 +17,18 @@ if (!rootElement) {
 
 createRoot(rootElement).render(
   <StrictMode>
+    <CssBaseline />
+    <GlobalStyles
+      styles={{
+        body: {
+          minHeight: "100vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: theme.palette.background.default,
+        },
+      }}
+    />
     <ThemeProvider theme={theme}>
       <App />
     </ThemeProvider>

@@ -6,12 +6,14 @@ export const styles: StyleProps = {
   container: (theme: Theme) => ({
     display: "flex",
     flexDirection: "column",
-    placeItems: "center",
     padding: 2,
     maxWidth: theme.spacing(40),
     backgroundColor: theme.palette.primary.main,
     borderRadius: theme.spacing(2.5),
     gap: 3,
+    [theme.breakpoints.down("sm")]: {
+      paddingBottom: 5,
+    },
   }),
   image: (theme: Theme) => ({
     width: "100%",
