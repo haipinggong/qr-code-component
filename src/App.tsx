@@ -7,7 +7,12 @@ function App() {
   return (
     <>
       <Box sx={styles.container}>
-        <Box component="img" src={qrCodeImage} sx={styles.image}></Box>
+        <Box
+          component="img"
+          src={qrCodeImage}
+          alt="QR code image"
+          sx={styles.image}
+        ></Box>
         <Box sx={styles.textContainer}>
           <Typography variant="h5" component="h1" sx={styles.title}>
             Improve your front-end skills by building projects
