@@ -3,31 +3,39 @@ import type { SxProps, Theme } from "@mui/material";
 type StyleProps = Record<string, SxProps<Theme>>;
 
 export const styles: StyleProps = {
-  container: (theme: Theme) => ({
+  wrapper: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    minHeight: "100vh",
+  },
+  content: (theme: Theme) => ({
     display: "flex",
     flexDirection: "column",
-    padding: 2,
-    maxWidth: theme.spacing(40),
-    backgroundColor: theme.palette.primary.main,
+    padding: theme.spacing(2, 2, 5, 2),
+    backgroundColor: theme.palette.common.white,
     borderRadius: theme.spacing(2.5),
-    gap: 3,
-    [theme.breakpoints.down("sm")]: {
-      paddingBottom: 5,
+    gap: theme.spacing(3),
+    [theme.breakpoints.up("sm")]: {
+      paddingBottom: theme.spacing(2),
     },
   }),
   image: (theme: Theme) => ({
+    maxWidth: "18rem",
     width: "100%",
+    aspectRatio: 1,
     borderRadius: theme.spacing(1.25),
   }),
   textContainer: {
+    maxWidth: "18rem",
     display: "flex",
     flexDirection: "column",
     gap: 2,
     paddingInline: 2,
     textAlign: "center",
   },
-  title: (theme: Theme) => ({
-    fontWeight: theme.typography.fontWeightBold,
+  description: (theme: Theme) => ({
+    color: theme.palette.slate.main,
   }),
 };
 
