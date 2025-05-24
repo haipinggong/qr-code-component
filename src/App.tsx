@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Box sx={styles.wrapper}>
-        <Box sx={styles.content}>
+        <Box sx={styles.content} component="main">
           <Box
             component="img"
             src={qrCodeImage}
